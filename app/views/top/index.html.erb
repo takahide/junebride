@@ -1,14 +1,52 @@
-<!-- Panels Overlay -->
+<div class="popup popup-about">
+  <div class="list-block">
+    <ul>
+      <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">コード</div>
+          <div class="item-input">
+            <input class="invite" type="text" placeholder="6桁の数字">
+          </div>
+        </div>
+      </div>
+      </li>
+      <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label guest"></div>
+          <div class="item-input">
+            <input class="guest-name" type="text" placeholder="">
+          </div>
+        </div>
+      </div>
+      </li>
+      <li>
+      <div class="item-content">
+        <div class="item-inner">
+          <div class="item-title label">参加</div>
+          <div class="item-input">
+            <label class="label-switch">
+              <input class="attend" type="checkbox">
+              <div class="checkbox"></div>
+            </label>
+          </div>
+        </div>
+      </div>
+      </li>
+      <p class="my-button submit">送信</p>
+    </ul>
+  </div>
+</div>
+
 <div class="panel-overlay"></div>
 
 <!-- Left Panel with Reveal effect -->
-<div class="panel panel-left panel-cover">
+<div class="panel panel-left panel-reveal">
   <div class="content-block">
-    <p>Left Panel content here</p>
-    <!-- Click on link with "close-panel" class will close panel -->
-    <p><a href="#" class="close-panel">Close me</a></p>
-    <!-- Click on link with "open-panel" and data-panel="right" attribute will open Right panel -->
-    <p><a href="#" data-panel="right" class="open-panel">Open Right Panel</a></p>
+    <ul class="menu">
+      <li class="open-popup">出席</li>
+    </ul>
   </div>
 </div>
 
@@ -23,25 +61,30 @@
   </div>
 </div>
 
-<div class="page-content">
-  <div class="content-block">
-    <!-- If no data-panel attribute, Left panel will be opened by default -->
-    <div class="key">
-      <p>*</P>
-      <p>8</P>
+<div class="views">
+  <div class="view view-main">
+    <div class="page-content">
+      <div class="content-block">
+        <p><a href="#" class="open-panel">Open Left Panel</a></p>
+        <!-- If no data-panel attribute, Left panel will be opened by default -->
+        <div class="key">
+          <p>＊</P>
+          <p>8</P>
+        </div>
+        <img src="/assets/hosokawa.png">
+      </div>
     </div>
   </div>
 </div>
 
-<script type="text/javascript">
+    <script type="text/javascript">
 $(".page-content").snowfall({
-flakeCount :100, // 数
+flakeCount :20, // 数
 flakeIndex : 99999, // スタイルシートのz-indexの値
-maxSpeed : 5, // 最大速度
+maxSpeed : 3, // 最大速度
 minSpeed : 1, // 最小速度
 maxSize  : 20, // 最大サイズ
 minSize  : 1, // 最小サイズ
-image : 'http://lib.tree-web.net/image/snowflakes1.png'
+image : '/assets/ast.gif'
 });
-</script>
-})
+    </script>
