@@ -1,4 +1,11 @@
 $ ->
+
+  $(".open-popup").click ->
+    $(".pmenu").css("display", "none");
+    id = $(@).attr("id");
+    $(".menu" + id).css("display", "block");
+
+
   $(".invite").on "input", ->
     if $(@).val().length == 6
       $.ajax {

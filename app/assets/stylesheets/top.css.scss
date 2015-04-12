@@ -12,11 +12,25 @@ body {
   li {
     padding: 20px;
     color: #fff;
+    cursor: pointer;
   }
 }
 
 .page-content {
   background: #000;
+  .menu-button {
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 30px;
+    cursor: pointer;
+    .line {
+      background: #fff;
+      margin: 5px;
+      height: 5px;
+      width: 30px;
+    }
+  }
   .key {
     width: 200px;
     margin: 0 auto;
@@ -34,21 +48,40 @@ body {
   }
 }
 
-.my-button {
-  width: 85%;
-  margin: 20px auto;
-  border-radius: 8px;
-  background: #0a0;
-  color: #fff;
-  padding: 10px;
-  text-align: center;
-  cursor: pointer;
+.popup {
+  .close-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 10px;
+    color: #999;
+    font-size: 200%;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .aisatsu {
+    padding: 50px;
+    line-height: 130%;
+    .keigu {
+      text-align: right;
+    }
+  }
+  .my-button {
+    width: 85%;
+    margin: 20px auto;
+    border-radius: 8px;
+    background: #0a0;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .item-input {
+    text-align: right;
+    padding-right: 15px;
+  }
 }
 
-.item-input {
-  text-align: right;
-  padding-right: 15px;
-}
 
 .top-image {
   width: 100%;

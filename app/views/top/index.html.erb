@@ -1,41 +1,61 @@
 <div class="popup popup-about">
-  <div class="list-block">
-    <ul>
-      <li>
-      <div class="item-content">
-        <div class="item-inner">
-          <div class="item-title label">コード</div>
-          <div class="item-input">
-            <input class="invite" type="text" placeholder="6桁の数字を入力">
+  <div class="close-button close-popup">＊</div>
+  <div class="pmenu menu1">
+    <div class="aisatsu">
+      <p>
+      拝啓　春陽の候 皆様におかれましては益々ご健勝のこととお慶び申し上げます<br>
+      私たちは平成26年11月11日に入籍し 新生活をスタートさせました<br>
+      つきましては ご挨拶を兼ねまして<br>
+      ささやかですが小宴を催したいと存じます<br>
+      ご多用中 誠に恐縮ではございますが<br>
+      ぜひご出席をいただきたく ご案内申し上げます</p>
+      <p class="keigu">敬具</p>
+      <br>
+      <p>平成27年4月吉日<br>
+      細川貴英<br>
+      吉田美里<br>
+      </p>
+    </div>
+  </div>
+  <div class="pmenu menu3">
+    <div class="list-block">
+      <ul>
+        <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title label">コード</div>
+            <div class="item-input">
+              <input class="invite" type="text" placeholder="6桁の数字を入力">
+            </div>
           </div>
         </div>
-      </div>
-      </li>
-      <li>
-      <div class="item-content">
-        <div class="item-inner">
-          <div class="item-title label guest"></div>
-          <div class="item-input">
-            <input class="guest-name" type="text" placeholder="">
+        </li>
+        <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title label guest"></div>
+            <div class="item-input">
+              <input class="guest-name" type="text" placeholder="">
+            </div>
           </div>
         </div>
-      </div>
-      </li>
-      <li>
-      <div class="item-content">
-        <div class="item-inner">
-          <div class="item-title label">参加</div>
-          <div class="item-input">
-            <label class="label-switch">
-              <input class="attend" type="checkbox">
-              <div class="checkbox"></div>
-            </label>
+        </li>
+        <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title label">参加</div>
+            <div class="item-input">
+              <label class="label-switch">
+                <input class="attend" type="checkbox">
+                <div class="checkbox"></div>
+              </label>
+            </div>
           </div>
         </div>
-      </div>
-      </li>
-      <p class="my-button submit">送信</p>
-    </ul>
+        </li>
+        <p class="my-button submit">送信</p>
+      </ul>
+    </div>
   </div>
 </div>
 
@@ -45,10 +65,10 @@
 <div class="panel panel-left panel-reveal">
   <div class="content-block">
     <ul class="menu">
-      <li class="open-popup">ごあいさつ</li>
-      <li class="open-popup">コンセプト</li>
-      <li class="open-popup">出席確認</li>
-      <li class="open-popup">会場地図</li>
+      <li id="1" class="open-popup">ごあいさつ</li>
+      <li id="2" class="open-popup">コンセプト</li>
+      <li id="3" class="open-popup">出席確認</li>
+      <li id="4" class="open-popup">会場地図</li>
     </ul>
   </div>
 </div>
@@ -68,6 +88,11 @@
   <div class="view view-main">
     <div class="page-content">
       <div class="content-block">
+        <div class="menu-button open-panel">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </div>
         <div class="key open-panel">
           <p>＊</P>
           <p>8</P>
