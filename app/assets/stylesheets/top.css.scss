@@ -61,10 +61,14 @@ body {
     z-index: 1000;
   }
   .aisatsu {
-    padding: 50px;
+    padding: 40px;
     line-height: 130%;
     .keigu {
       text-align: right;
+    }
+    .keyboard {
+      margin: 14px auto;
+      width: 100%;
     }
   }
   .my-button {
