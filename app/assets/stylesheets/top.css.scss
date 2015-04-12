@@ -8,6 +8,13 @@ body {
   font-family:'Lucida Grande', 'Hiragino Kaku Gothic ProN', 'ヒラギノ角ゴ ProN W3', Meiryo, メイリオ, sans-serif;
 }
 
+.panel {
+  li {
+    padding: 20px;
+    color: #fff;
+  }
+}
+
 .page-content {
   background: #000;
   .key {
@@ -28,9 +35,8 @@ body {
 }
 
 .my-button {
-  margin: 10px;
-  width: 90%;
-  margin: 0 auto;
+  width: 85%;
+  margin: 20px auto;
   border-radius: 8px;
   background: #0a0;
   color: #fff;
@@ -39,7 +45,23 @@ body {
   cursor: pointer;
 }
 
+.item-input {
+  text-align: right;
+  padding-right: 15px;
+}
+
 .top-image {
   width: 100%;
+}
+
+.view-main .content-block {
+  padding: 0;
+}
+
+.list-block ul:before {
+  background: none;
+}
+.list-block ul:after {
+  background: none;
 }
 

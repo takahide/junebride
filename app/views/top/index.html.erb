@@ -6,7 +6,7 @@
         <div class="item-inner">
           <div class="item-title label">コード</div>
           <div class="item-input">
-            <input class="invite" type="text" placeholder="6桁の数字">
+            <input class="invite" type="text" placeholder="6桁の数字を入力">
           </div>
         </div>
       </div>
@@ -45,7 +45,10 @@
 <div class="panel panel-left panel-reveal">
   <div class="content-block">
     <ul class="menu">
-      <li class="open-popup">出席</li>
+      <li class="open-popup">ごあいさつ</li>
+      <li class="open-popup">コンセプト</li>
+      <li class="open-popup">出席確認</li>
+      <li class="open-popup">会場地図</li>
     </ul>
   </div>
 </div>
@@ -65,16 +68,11 @@
   <div class="view view-main">
     <div class="page-content">
       <div class="content-block">
-        <p><a href="#" class="open-panel">三重と京都の融合</a></p>
-        <p class="title">結婚します。</P>
-        <p class="exp">このたび、細川貴英と吉田美里は、結婚することとなりました。</p>
-        <%= image_tag "sunobo.jpg", class: "top-image" %>
-        <div class="key">
+        <div class="key open-panel">
           <p>＊</P>
           <p>8</P>
         </div>
-        <p class="title">*は、かけ算</P>
-        <p class="exp">×と書くと縁起が悪いですが、プログラミングのかけ算の意味があります。和と洋の融合、関西と関東の融合、</p>
+        <%= image_tag "kekkon.png", class: "top-image" %>
       </div>
     </div>
   </div>
