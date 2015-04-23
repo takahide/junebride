@@ -17,9 +17,11 @@ body {
 }
 
 .page-content {
-  background: #000;
+  background: url(bg.jpg);
+  background-position: center;
   overflow: hidden;
   .menu-button {
+    display: none;
     position: absolute;
     left: 0;
     top: 0;
@@ -32,14 +34,77 @@ body {
       width: 30px;
     }
   }
+  .top {
+    width: 95%;
+    margin: 0 auto;
+    div {
+      color: #000;
+      p {
+        background: rgba(255, 255, 255, .95);
+      }
+    }
+    .top1 {
+      font-size: 210%;
+      font-weight: bold;
+      p {
+        padding-top: 10px;
+      }
+    }
+    .top2 {
+      margin-top: 6px;
+      font-size: 140%;
+      width: 190px;
+      p {
+        padding: 4px;
+      }
+    }
+    .top3 {
+      margin-top: 6px;
+      font-size: 140%;
+      width: 110px;
+      p {
+        padding: 4px;
+      }
+    }
+  }
   .key {
+    display: none;
     width: 200px;
     margin: 0 auto;
     p {
       text-align: center;
       color: #fff;
-      font-size: 500%;
     }
+  }
+  .names {
+    margin: 0 auto;
+    position: absolute;
+    bottom: 20px;
+    background: rgba(255, 255, 255, .95);
+    font-size: 140%;
+    color: #000;
+    width: 100%;
+    background: rgba(255, 255, 255, .95);
+    z-index: 5;
+    .left {
+      float: left;
+    }
+    .right {
+      float: right;
+    }
+  }
+  .chu {
+    margin: 0 auto;
+    padding: 2px;
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    z-index: 10;
+    font-size: 60%;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background: rgba(0, 0, 0, .5);
   }
   .title {
     padding: 20px 0;
@@ -63,6 +128,11 @@ body {
   .aisatsu {
     padding: 40px;
     line-height: 130%;
+    .info {
+      margin: 15px;
+      padding: 10px;
+      background: #fdd;
+    }
     .keigu {
       text-align: right;
     }
@@ -89,10 +159,15 @@ body {
 
 
 .top-image {
+  position: absolute;
+  bottom: 0px;
   width: 100%;
+  z-index: 1;
 }
 
+
 .view-main .content-block {
+  margin: 0;
   padding: 0;
 }
 

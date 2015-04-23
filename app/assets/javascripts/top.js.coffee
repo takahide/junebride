@@ -17,6 +17,18 @@ $ ->
           else
             $(".guest").text("名前")
             $(".guest-name").val("#{json.name} 様")
+            if json.attendance == 11
+              $(".attend1").prop("checked", true)
+              $(".attend2").prop("checked", true)
+            if json.attendance == 22
+              $(".attend1").prop("checked", false)
+              $(".attend2").prop("checked", false)
+            if json.attendance == 12
+              $(".attend1").prop("checked", true)
+              $(".attend2").prop("checked", false)
+            if json.attendance == 21
+              $(".attend1").prop("checked", false)
+              $(".attend2").prop("checked", true)
       }
     else
       $(".guest").text("")
@@ -28,8 +40,12 @@ $ ->
     if $(".guest-name").val() == ""
       alert "正しいコードが入力されていません。"
       return
-    if $(".attend").prop("checked")
+    if $(".attend1").prop("checked") && $(".attend2").prop("checked")
       url = "/attend/#{code}"
+    else if $(".attend1").prop("checked")
+      url = "/only_1_attend/#{code}"
+    else if $(".attend2").prop("checked")
+      url = "/only_2_attend/#{code}"
     else
       url = "/not_attend/#{code}"
     myApp.showPreloader '通信中...'
@@ -41,11 +57,19 @@ $ ->
         if json is null
           alert "コードが間違っています。"
         else
-          if json.attendance == 1
-            str = "出席"
-          else if json.attendance == 2
-            str = "欠席"
-          alert "#{json.name}様「#{str}」で登録しました。"
+          if json.attendance == 11
+            str1 = "出席"
+            str2 = "出席"
+          else if json.attendance == 22
+            str1 = "欠席"
+            str2 = "欠席"
+          else if json.attendance == 12
+            str1 = "出席"
+            str2 = "欠席"
+          else if json.attendance == 21
+            str1 = "欠席"
+            str2 = "出席"
+          alert "#{json.name}様、挙式「#{str1}」披露宴「#{str2}」で登録しました。"
         location.reload()
     }
 

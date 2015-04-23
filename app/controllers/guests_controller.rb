@@ -5,6 +5,7 @@ class GuestsController < ApplicationController
   # GET /guests.json
   def index
     @guests = Guest.all
+    render layout: false
   end
 
   # GET /guests/1
@@ -25,6 +26,9 @@ class GuestsController < ApplicationController
   # POST /guests.json
   def create
     @guest = Guest.new(guest_params)
+    @guest.code = [*100000..999999].sample
+    @guest.attendance = 0
+    @guest.save
 
     respond_to do |format|
       if @guest.save

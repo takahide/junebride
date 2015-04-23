@@ -6,7 +6,7 @@ class TopController < ApplicationController
     code = params[:code].to_i
     @guest = Guest.find_by_code code
     if @guest.present?
-      @guest.attendance = 1
+      @guest.attendance = 11
       @guest.save
       render json: @guest
     end
@@ -15,7 +15,25 @@ class TopController < ApplicationController
     code = params[:code].to_i
     @guest = Guest.find_by_code code
     if @guest.present?
-      @guest.attendance = 2
+      @guest.attendance = 22
+      @guest.save
+      render json: @guest
+    end
+  end
+  def only_1_attend
+    code = params[:code].to_i
+    @guest = Guest.find_by_code code
+    if @guest.present?
+      @guest.attendance = 12
+      @guest.save
+      render json: @guest
+    end
+  end
+  def only_2_attend
+    code = params[:code].to_i
+    @guest = Guest.find_by_code code
+    if @guest.present?
+      @guest.attendance = 21
       @guest.save
       render json: @guest
     end

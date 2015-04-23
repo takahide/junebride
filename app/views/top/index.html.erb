@@ -5,16 +5,15 @@
       <p>
       拝啓　春陽の候 皆様におかれましては益々ご健勝のこととお慶び申し上げます<br>
       私たちは平成26年11月11日に入籍し 新生活をスタートさせました<br>
-      つきましては ご挨拶を兼ねまして<br>
-      ささやかですが小宴を催したいと存じます<br>
-      ご多用中 誠に恐縮ではございますが<br>
-      ぜひご出席をいただきたく ご案内申し上げます</p>
+      つきましては ご挨拶を兼ねまして ささやかですが小宴を催したいと存じます<br>
+      ご多用中 誠に恐縮ではございますが ぜひご出席をいただきたく ご案内申し上げます</p>
       <p class="keigu">敬具</p>
-      <br>
+      <p class="info">日時: 平成27年6月14日<br>
+      会場: 八芳園白鳳館<br>
+      </p>
       <p>平成27年4月吉日<br>
       細川貴英<br>
       吉田美里<br>
-      </p>
     </div>
   </div>
   <div class="pmenu menu2">
@@ -67,10 +66,23 @@
         <li>
         <div class="item-content">
           <div class="item-inner">
-            <div class="item-title label">参加</div>
+            <div class="item-title label">挙式出欠</div>
             <div class="item-input">
               <label class="label-switch">
-                <input class="attend" type="checkbox">
+                <input class="attend1" type="checkbox">
+                <div class="checkbox"></div>
+              </label>
+            </div>
+          </div>
+        </div>
+        </li>
+        <li>
+        <div class="item-content">
+          <div class="item-inner">
+            <div class="item-title label">披露宴出欠</div>
+            <div class="item-input">
+              <label class="label-switch">
+                <input class="attend2" type="checkbox">
                 <div class="checkbox"></div>
               </label>
             </div>
@@ -97,29 +109,36 @@
   </div>
 </div>
 
-<!-- Right Panel with Cover effect -->
-<div class="panel panel-right panel-cover">
-  <div class="content-block">
-    <p>Right Panel content here</p>
-    <!-- Click on link with "close-panel" class will close panel -->
-    <p><a href="#" class="close-panel">Close me</a></p>
-    <!-- Click on link with "open-panel" and data-panel="left" attribute will open Left panel -->
-    <p><a href="#" data-panel="left" class="open-panel">Open Left Panel</a></p>
-  </div>
-</div>
-
 <div class="views">
   <div class="view view-main">
     <div class="page-content">
       <div class="content-block">
+        <div class="top">
+          <div class="top1">
+            <p>JUNE BRI.DE</p>
+          </div>
+          <div class="top2">
+            <p>JUNE 14TH 2015</p>
+          </div>
+          <div class="top3">
+            <p>HAPPOEN</p>
+          </div>
+        </div>
         <div class="menu-button open-panel">
           <div class="line"></div>
           <div class="line"></div>
           <div class="line"></div>
         </div>
         <div class="key open-panel">
-          <p>＊</P>
-          <p>8</P>
+          <p><%= image_tag "ast1.png", size: "50x50" %></p>
+          <p><%= image_tag "8.png", size: "50x50" %></p>
+        </div>
+        <div class="names">
+          <p class="left">TAKAHIDE</p>
+          <p class="right">MISATO</p>
+        </div>
+        <div class="chu">
+          <p>※ 当日は、和婚です。</p>
         </div>
         <%= image_tag "kekkon.png", class: "top-image" %>
       </div>
@@ -135,6 +154,6 @@ maxSpeed : 3, // 最大速度
 minSpeed : 1, // 最小速度
 maxSize  : 20, // 最大サイズ
 minSize  : 1, // 最小サイズ
-image : '/images/ast.gif'
+image : '/images/ast1.png'
 });
 </script>
