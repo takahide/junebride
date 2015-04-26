@@ -9,4 +9,32 @@ class Job
       @guest.save
     end
   end
+
+  def self.remove_eight
+    @guests = Guest.all
+    @guests.each do |g|
+      s = g.code.to_s
+      new = ""
+      s.chars do |c|
+        if c == "8"
+          new = new + rand(1..7).to_s
+        else
+          new = new + c
+        end
+      end
+      g.code = new.to_i
+      g.save
+    end
+  end
+
+  def self.insert_eight
+    @guests = Guest.all
+    @guests.each do |g|
+      index = g.id % 6
+      s = g.code.to_s
+      s[index] = "8"
+      g.code = s.to_i
+      g.save
+    end
+  end
 end
