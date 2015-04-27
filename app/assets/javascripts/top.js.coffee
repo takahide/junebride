@@ -69,7 +69,7 @@ $ ->
           else if json.attendance == 21
             str1 = "欠席"
             str2 = "出席"
-          alert "#{json.name}様、挙式「#{str1}」披露宴「#{str2}」で登録しました。"
+          alert "#{json.name}様\n挙式「#{str1}」\n披露宴「#{str2}」\nで登録しました"
         location.reload()
     }
 

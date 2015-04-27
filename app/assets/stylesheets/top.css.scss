@@ -200,6 +200,13 @@ body {
   }
 }
 
+@media (orientation: landscape) {
+  .top-image {
+    width: 500px;
+    right: 20%;
+  }
+}
+
 
 
 .top4 {
