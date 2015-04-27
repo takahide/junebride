@@ -1,5 +1,7 @@
 $ ->
 
+  $(".black").addClass("fade")
+
   $(".open-popup").click ->
     $(".pmenu").css("display", "none");
     id = $(@).attr("id");

@@ -231,3 +231,16 @@ body {
   left: 10%;
   z-index: 2;
 }
+
+.black {
+  -webkit-transition: all 5s;
+  -moz-transition: all 5s;
+  -ms-transition: all 5s;
+  -o-transition: all 5s;
+  transition: all 5s;
+  opacity: 1;
+}
+
+.fade {
+  opacity: 0;
+}
