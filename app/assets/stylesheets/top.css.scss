@@ -15,6 +15,18 @@ body {
     cursor: pointer;
     border-bottom: solid 1px #333;
   }
+  .keyboard {
+    margin-top: 20px;
+    div {
+      width: 30px;
+      height: 30px;
+      margin: 6px auto;
+      img {
+        width: 100%;
+        height: 30px;
+      }
+    }
+  }
 }
 
 .page-content {
@@ -22,7 +34,7 @@ body {
   background-position: center;
   background-size: cover;
   overflow: hidden;
-  font-family: 'Comfortaa', cursive;
+  font-family: 'Crimson Text', serif;
   .menu-button {
     display: none;
     position: absolute;
@@ -233,11 +245,11 @@ body {
 }
 
 .black {
-  -webkit-transition: all 5s;
-  -moz-transition: all 5s;
-  -ms-transition: all 5s;
-  -o-transition: all 5s;
-  transition: all 5s;
+  -webkit-transition: all 8s;
+  -moz-transition: all 8s;
+  -ms-transition: all 8s;
+  -o-transition: all 8s;
+  transition: all 8s;
   opacity: 1;
 }
 
