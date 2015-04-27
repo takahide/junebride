@@ -193,16 +193,9 @@ body {
 }
 
 
-@media screen and (min-width: 500px) {
+@media screen and (orientation: landscape) {
   .top-image {
-    width: 500px;
-    right: 10%;
-  }
-}
-
-@media (orientation: landscape) {
-  .top-image {
-    width: 500px;
+    width: 60%;
     right: 20%;
   }
 }
