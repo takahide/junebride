@@ -1,6 +1,8 @@
 $ ->
 
-  $(".black").addClass("fade")
+  setTimeout ->
+    $(".black").addClass("fade")
+  , 1000
 
   $(".open-popup").click ->
     $(".pmenu").css("display", "none");

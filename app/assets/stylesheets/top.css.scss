@@ -50,7 +50,7 @@ body {
     }
   }
   .top {
-    width: 95%;
+    width: 100%;
     margin: 0 auto;
     div {
       color: #000;
@@ -61,6 +61,7 @@ body {
     .top1 {
       font-size: 210%;
       font-weight: bold;
+      width: 270px;
       p {
         padding-top: 10px;
       }
