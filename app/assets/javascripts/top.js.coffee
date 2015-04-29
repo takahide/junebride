@@ -20,7 +20,8 @@ $ ->
             alert "コードが間違っています。"
           else
             $(".guest").text("名前")
-            $(".message").text("#{json.message}")
+            if json.message != null
+              $(".message").text("#{json.message}")
             $(".guest-name").val("#{json.name} 様")
             if json.attendance == 11
               $(".attend1").prop("checked", true)
