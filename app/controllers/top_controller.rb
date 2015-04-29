@@ -7,6 +7,7 @@ class TopController < ApplicationController
     @guest = Guest.find_by_code code
     if @guest.present?
       @guest.attendance = 11
+      @guest.message = params[:message]
       @guest.save
       render json: @guest
     end
@@ -16,6 +17,7 @@ class TopController < ApplicationController
     @guest = Guest.find_by_code code
     if @guest.present?
       @guest.attendance = 22
+      @guest.message = params[:message]
       @guest.save
       render json: @guest
     end
@@ -25,6 +27,7 @@ class TopController < ApplicationController
     @guest = Guest.find_by_code code
     if @guest.present?
       @guest.attendance = 12
+      @guest.message = params[:message]
       @guest.save
       render json: @guest
     end
@@ -34,6 +37,7 @@ class TopController < ApplicationController
     @guest = Guest.find_by_code code
     if @guest.present?
       @guest.attendance = 21
+      @guest.message = params[:message]
       @guest.save
       render json: @guest
     end

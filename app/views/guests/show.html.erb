@@ -15,5 +15,10 @@
   <%= @guest.attendance %>
 </p>
 
+<p>
+  <strong>Message</strong>
+  <%= @guest.message %>
+</p>
+
 <%= link_to 'Edit', edit_guest_path(@guest) %> |
 <%= link_to 'Back', guests_path %>

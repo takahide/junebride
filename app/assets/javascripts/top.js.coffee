@@ -20,6 +20,7 @@ $ ->
             alert "コードが間違っています。"
           else
             $(".guest").text("名前")
+            $(".message").text("#{json.message}")
             $(".guest-name").val("#{json.name} 様")
             if json.attendance == 11
               $(".attend1").prop("checked", true)
@@ -41,6 +42,7 @@ $ ->
 
   $(".submit").on "click", ->
     code = $(".invite").val()
+    message = $(".message").val()
     if $(".guest-name").val() == ""
       alert "正しいコードが入力されていません。"
       return
@@ -54,7 +56,7 @@ $ ->
       url = "/not_attend/#{code}"
     myApp.showPreloader '通信中...'
     $.ajax {
-      url: url
+      url: "#{url}?message=#{message}"
       cache: false
       success: (json) ->
         myApp.hidePreloader()
@@ -73,7 +75,7 @@ $ ->
           else if json.attendance == 21
             str1 = "欠席"
             str2 = "出席"
-          alert "#{json.name}様\n挙式「#{str1}」\n披露宴「#{str2}」\nで登録しました"
+          alert "#{json.name}様\n挙式「#{str1}」\n披露宴「#{str2}」\nメッセージ「#{message}」\nで登録しました"
         location.reload()
     }
 
