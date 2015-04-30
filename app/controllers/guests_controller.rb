@@ -1,5 +1,7 @@
 class GuestsController < ApplicationController
   before_action :set_guest, only: [:show, :edit, :update, :destroy]
+  before_filter :basic
+
 
   # GET /guests
   # GET /guests.json
@@ -66,6 +68,11 @@ class GuestsController < ApplicationController
   end
 
   private
+    def basic
+    authenticate_or_request_with_http_basic do |user, pass|
+      user == 'chuniya' && pass == 'chuniya'
+    end
+    end
     # Use callbacks to share common setup or constraints between actions.
     def set_guest
       @guest = Guest.find(params[:id])
