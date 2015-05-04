@@ -1,0 +1,13 @@
+/Users/TAKAHIDE/.rbenv/versions/2.0.0-p247/bin/ruby extconf.rb 
+creating Makefile
+
+make "DESTDIR="
+compiling generator.c
+In file included from generator.c:1:
+In file included from ./../fbuffer/fbuffer.h:5:
+In file included from /Users/TAKAHIDE/.rbenv/versions/2.0.0-p247/include/ruby-2.0.0/ruby.h:33:
+/Users/TAKAHIDE/.rbenv/versions/2.0.0-p247/include/ruby-2.0.0/ruby/ruby.h:51:11: fatal error: 'string.h' file not found
+# include <string.h>
+          ^
+1 error generated.
+make: *** [generator.o] Error 1
