@@ -2,6 +2,12 @@ class TopController < ApplicationController
   def index
 
   end
+
+  def en
+
+  end
+
+
   def attend
     code = params[:code].to_i
     @guest = Guest.find_by_code code
