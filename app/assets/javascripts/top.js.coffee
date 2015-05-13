@@ -19,7 +19,10 @@ $ ->
           if json is null
             alert "コードが間違っています。"
           else
-            $(".guest").text("名前")
+            if location.href.indexOf('en') != -1
+              $(".guest").text("Name")
+            else
+              $(".guest").text("名前")
             if json.message != null
               $(".message").text("#{json.message}")
             $(".guest-name").val("#{json.name} 様")
