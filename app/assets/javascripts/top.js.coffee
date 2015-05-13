@@ -1,7 +1,4 @@
 $ ->
-  if location.href.indexOf('en') != -1
-    location.reload()
-
   setTimeout ->
     $(".black").addClass("fade")
   , 1000
